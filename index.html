@@ -376,7 +376,59 @@
 </body>
 </html> 
 
+   <title>Meu Site Responsivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura total da viewport */
+        }
+        .content {
+            text-align: center;
+        }
+        .custom-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: rgb(66, 134, 244);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border: none;
+            outline: none;
+            text-decoration: none; /* Remove sublinhado padrão */
+            display: inline-block;
+        }
+        .custom-button:hover {
+            background-color: rgb(46, 116, 224);
+        }
 
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                height: auto; /* Altura ajustável conforme o conteúdo */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="content">
+        <h1>Seja bem-vindo ao meu site!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="custom-button">Ir para a compra</a>
+    </div>
+</div>
 </body>
 </html>
 </html>
